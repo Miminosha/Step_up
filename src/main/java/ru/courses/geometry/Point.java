@@ -3,7 +3,8 @@ package ru.courses.geometry;
 import java.util.Objects;
 
 public class Point implements Cloneable {
-    private final int x, y;
+    final int x;
+    final int y;
 
     public Point(int x, int y) {
         this.x = x;

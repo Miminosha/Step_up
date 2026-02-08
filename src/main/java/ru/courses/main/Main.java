@@ -1,20 +1,24 @@
 package ru.courses.main;
 
-import ru.courses.geometry.Line;
 import ru.courses.geometry.Point;
+import ru.courses.geometry.PolyLine;
 
 public class Main {
-    static void main() throws Exception {
+    static void main() {
 
         Point p1 = new Point(1, 5);
-        Point p2 = p1.clone();
+        Point p2 = new Point(2, 5);
+        Point p3 = new Point(4, 7);
+        Point p4 = new Point(7, 11);
 
-        Line l1 = new Line(p1, p2);
-        Line l2 = l1.clone();
+        PolyLine polyline1 = new PolyLine(new Point(1, 5),
+                new Point(2, 5), new Point(4, 7), new Point(7, 11));
 
-        System.out.println(l1 == l2);
-        System.out.println(l1.equals(l2));
-        System.out.println(l1);
-        System.out.println(l2);
+        PolyLine polyLine2 = new PolyLine(p1, p2, p3, p4);
+
+        System.out.println(polyline1);
+        System.out.println(polyLine2);
+        System.out.println(polyline1 == polyLine2);
+        System.out.println(polyline1.equals(polyLine2));
     }
 }

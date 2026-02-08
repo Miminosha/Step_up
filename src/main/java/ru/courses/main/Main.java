@@ -3,7 +3,7 @@ package ru.courses.main;
 import ru.courses.math.Fraction;
 
 public class Main {
-    static void main() throws Exception {
+    static void main() {
         Fraction f1 = new Fraction(3, 7);
         Fraction f2 = f1.clone();
 

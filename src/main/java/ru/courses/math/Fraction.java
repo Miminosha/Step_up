@@ -23,8 +23,8 @@ public class Fraction implements Cloneable {
     }
 
     @Override
-    public Fraction clone() throws CloneNotSupportedException {
-        return (Fraction) super.clone();
+    public Fraction clone() {
+        return new Fraction(num, denum);
     }
 
     public String toString() {

@@ -24,7 +24,7 @@ public class Line implements Cloneable {
 
     @Override
     public Line clone() throws CloneNotSupportedException {
-        return (Line) super.clone();
+        return new Line(start.clone(),end.clone());
     }
 
     @Override

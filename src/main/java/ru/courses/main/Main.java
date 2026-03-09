@@ -1,16 +1,18 @@
 package ru.courses.main;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.ArrayList;
 
 public class Main {
     static void main() {
-        Stream<String> stream = Stream.of("I", "like", "java");
-        String result = getStringFromStream(stream);
-        System.out.println(result);
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(45);
+        list.add(3);
+        list.add(97);
+
+        printList(list);
     }
 
-    public static String getStringFromStream(Stream<String> stringStream) {
-        return stringStream.collect(Collectors.joining(" "));
+    public static void printList(ArrayList<Integer> list) {
+        list.forEach(item -> System.out.println(item));
     }
 }
